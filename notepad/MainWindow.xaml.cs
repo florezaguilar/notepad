@@ -101,7 +101,14 @@ namespace WpfApplication1
 
         private void MenBarr_Click(object sender, RoutedEventArgs e)
         {
-            statusBar1.Visibility = Visibility.Visible;
+            MenBarr.IsCheckable = true;
+            if (MenBarr.IsChecked == true)
+            {
+                statusBar1.Visibility = Visibility.Visible;
+            }
+            else
+                statusBar1.Visibility = Visibility.Hidden;
+
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
