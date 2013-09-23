@@ -65,7 +65,7 @@ namespace WpfApplication1
 
             if (result == true)
             {
-
+                this.Title = file.FileName;
                 System.IO.StreamReader sr = new System.IO.StreamReader(file.FileName);
                 textBox1.Text = Convert.ToString(sr.ReadToEnd());
                 sr.Close();
